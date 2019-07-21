@@ -5,3 +5,5 @@ def exchangeRate(dollar):
     return dollar*6.5
 
 print(exchangeRate(10))
+print(exchangeRate.__doc__)
+print(help(exchangeRate))

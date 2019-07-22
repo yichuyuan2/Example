@@ -27,3 +27,13 @@ def myFun():
 
 myFun()
 print(count)
+
+#闭包closure
+def funX():
+    x = [5]
+    def funY():
+        x[0] *= x[0]
+        return x[0]
+    return funY
+
+print(funX()())

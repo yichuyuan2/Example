@@ -50,17 +50,21 @@ class MyTimer:
             if result[index]:
                 prompt += (str(result[index]) + self.unit[index])
         return prompt
-    
-t1 = MyTimer()
-t1 #未开始计时
-t1.stop() #提示：请先调用start()开始计时！
-t1.start() #计时开始
-t1 #提示：请先调用stop()开始计时！
-t1.stop() #计时结束！
-t1 #总共运行了8秒
-t2 = MyTimer()
-t2.start() #计时开始
-t2.stop() #计时结束！
-t2 #总共运行了4秒
-t1+t2 #总共运行了12秒
+
+def test(): 
+    t1 = MyTimer()
+    t1 #未开始计时
+    t1.stop() #提示：请先调用start()开始计时！
+    t1.start() #计时开始
+    t1 #提示：请先调用stop()开始计时！
+    t1.stop() #计时结束！
+    t1 #总共运行了8秒
+    t2 = MyTimer()
+    t2.start() #计时开始
+    t2.stop() #计时结束！
+    t2 #总共运行了4秒
+    t1+t2 #总共运行了12秒
+
+if __name__ == '__main__':
+    test()
 
